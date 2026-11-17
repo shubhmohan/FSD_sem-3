@@ -1,0 +1,35 @@
+### Get All Products
+GET http://localhost:3000/api/products
+
+### Get Product by ID
+GET http://localhost:3000/api/products/301
+
+### Filter Products by Category (Case-insensitive)
+GET http://localhost:3000/api/products/filter?category=electronics
+
+### Create New Product
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "name": "Water Bottle",
+  "category": "Accessories",
+  "price": 299,
+  "quantity": 40,
+  "inStock": true
+}
+
+### Update Product
+PUT http://localhost:3000/api/products/301
+Content-Type: application/json
+
+{
+  "name": "Wireless Mouse",
+  "category": "Electronics",
+  "price": 749,
+  "quantity": 20,
+  "inStock": true
+}
+
+### Delete Product
+DELETE http://localhost:3000/api/products/303
